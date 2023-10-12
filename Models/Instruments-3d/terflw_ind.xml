@@ -5,7 +5,7 @@ sweat by maggse
 <PropertyList>
 
  <path>terflw_ind.ac</path>
- 
+
 
  <!-- terrain follow switch on/off -->
 
@@ -29,14 +29,14 @@ sweat by maggse
 		 <z>0.0</z>
 	 </axis>
 	 <center>
-		 <x-m>0.005</x-m>
-		 <y-m>-0.028</y-m>
-		 <z-m>-0.018</z-m>
+		 <x-m>-18.46675</x-m>
+		 <y-m>-0.01946</y-m>
+		 <z-m>-0.14178</z-m>
    </center>
  </animation>
- 
+
  <!-- clickable buttons block (osg only!) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
- 
+
  <animation>
 	 <type>pick</type>
 	 <object-name>switch_terflw</object-name>
@@ -77,9 +77,9 @@ sweat by maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>-0.381</y-m>
-		<z-m>-0.018</z-m>
+		<x-m>-18.46581</x-m>
+		<y-m> 0.05850</y-m>
+		<z-m>-0.14174</z-m>
 	</center>
 </animation>
 
@@ -126,9 +126,9 @@ sweat by maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>-0.028</y-m>
-		<z-m>-0.018</z-m>
+		<x-m>-18.46667</x-m>
+		<y-m> 0.12440</y-m>
+		<z-m>-0.14189</z-m>
 	</center>
 </animation>
 
@@ -174,9 +174,9 @@ sweat by maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.013</x-m>
-		<y-m>-0.335</y-m>
-		<z-m>-0.060</z-m>
+		<x-m>-18.460</x-m>
+		<y-m> 0.1174</y-m>
+		<z-m>-0.2022</z-m>
 	</center>
 </animation>
 
@@ -234,9 +234,9 @@ sweat by maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.013</x-m>
-		<y-m>-0.300</y-m>
-		<z-m>-0.033</z-m>
+		<x-m>-18.47</x-m>
+		<y-m> 0.1629</y-m>
+		<z-m>-0.1642</z-m>
 	</center>
 </animation>
 
@@ -337,9 +337,9 @@ sweat by maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.013</x-m>
-		<y-m>-0.408</y-m>
-		<z-m>-0.033</z-m>
+		<x-m>-18.47</x-m>
+		<y-m> 0.02668</y-m>
+		<z-m>-0.1625</z-m>
 	</center>
 </animation>
 
@@ -408,9 +408,9 @@ sweat by maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.013</x-m>
-		<y-m>-0.435</y-m>
-		<z-m>-0.058</z-m>
+		<x-m>-18.47</x-m>
+		<y-m>-0.00864</y-m>
+		<z-m>-0.1974</z-m>
 	</center>
 </animation>
 
@@ -453,8 +453,6 @@ sweat by maggse
 	</action>
 </animation>
 
-
-
 <animation>
 	<type>material</type>
 	<object-name>switch_terflw</object-name>
@@ -465,44 +463,13 @@ sweat by maggse
 	<object-name>knob_setclr</object-name>
 	<object-name>knob_smh</object-name>
 	<object-name>fuel_valves.001</object-name>
-	<emission>
-		<red>0.6</red>
-		<green>0.4</green>
-		<blue>0.3</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+	 <emission>
+		 <red>0.9</red>
+		 <green>0.5</green>
+		 <blue>0.9</blue>
+		 <factor-prop>controls/lighting/instruments-norm</factor-prop>
 	</emission>
 </animation>
-<!--
-<animation>
-	<type>pick</type>
-	<object-name>ALT.minus</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<interval-sec>0.1</interval-sec>
-		<binding>
-			<command>property-adjust</command>
-			<property>/instrumentation/altimeter/setting-inhg</property>
-			<step>-0.01</step>
-			<min>26.0</min>
-			<max>33.0</max>
-			<wrap>false</wrap>
-		</binding>
-	</action>
-	<action>
-		<button>1</button>
-		<repeatable>true</repeatable>
-		<interval-sec>0.1</interval-sec>
-		<binding>
-			<command>property-adjust</command>
-			<property>/instrumentation/altimeter/setting-inhg</property>
-			<step>-0.1</step>
-			<min>26.0</min>
-			<max>33.0</max>
-			<wrap>false</wrap>
-		</binding>
-	</action>
-</animation>
- -->
+
 
 </PropertyList>

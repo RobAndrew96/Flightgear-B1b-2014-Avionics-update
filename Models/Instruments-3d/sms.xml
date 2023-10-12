@@ -18,6 +18,12 @@ maggse
 			      <command>nasal</command>
 			      <script>b1b.bay_fwd(1)</script>
 		 </binding>
+	 <emission>
+		 <red>0.0</red>
+		 <green>0.9</green>
+		 <blue>0.0</blue>
+		 <factor-prop>controls/lighting/instruments-norm</factor-prop>
+	</emission>
 
 	 </action>
 </animation>
@@ -442,8 +448,75 @@ maggse
 		 <y>1.0</y>
 		 <z>0.0</z>
 	 </axis>
+	</animation>
+  <animation>
+   <type>rotate</type>
+   <object-name>safety.006</object-name>
+   <property>controls/switches/safety.006</property>
+   <factor>45</factor>
+   <min>0</min>
+   <max>1</max>
+   <center>
+    <x-m> 0.00678</x-m>
+    <y-m> 0.05850</y-m>
+    <z-m>-0.06081</z-m>
+   </center>
+   <axis>
+    <x>0</x>
+    <y>-1</y>
+    <z>0</z>
+   </axis>
+  </animation>
+
+  <animation>
+   <type>pick</type>
+   <object-name>safety.006</object-name>
+   <action>
+    <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/safety.006</property>
+        <factor>45</factor>
+        <min>0</min>
+        <max>1</max>
+      </binding>
+   </action>
  </animation>
- 
+
+ <animation>
+   <type>rotate</type>
+   <object-name>jettison</object-name>
+   <property>armament/oso/auto-release</property>
+   <factor>45</factor>
+   <min>0</min>
+   <max>1</max>
+   <center>
+    <x-m> 0.00696</x-m>
+    <y-m> 0.05882</y-m>
+    <z-m>-0.08370</z-m>
+   </center>
+   <axis>
+    <x>0</x>
+    <y>-1</y>
+    <z>0</z>
+   </axis>
+  </animation>
+
+  <animation>
+   <type>pick</type>
+   <object-name>jettison</object-name>
+   <action>
+    <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>armament/oso/auto-release</property>
+        <factor>0</factor>
+        <min>0</min>
+        <max>1</max>
+      </binding>
+   </action>
+ </animation>
+
 <animation>
 	<type>material</type>
   <object-name>sms_button</object-name>
@@ -473,23 +546,23 @@ maggse
   <object-name>sms_button.024</object-name>
   <object-name>sms_button.025</object-name>
   <object-name>sms_button.026</object-name>
-	<emission>
-	<red>0.5</red>
-		<green>0.3</green>
-	<blue>0.3</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+	 <emission>
+		 <red>0.9</red>
+		 <green>0.0</green>
+		 <blue>0.3</blue>
+		 <factor-prop>controls/lighting/instruments-norm</factor-prop>
 	</emission>
 </animation>
 
-<animation>
+<!--animation>
 	<type>material</type>
   <object-name>sms</object-name>
-	<emission>
-	<red>0.3</red>
-	<green>0.2</green>
-		<blue>0.2</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+	 <emission>
+		 <red>0.3</red>
+		 <green>0.0</green>
+		 <blue>0.0</blue>
+		 <factor-prop>controls/lighting/instruments-norm</factor-prop>
 	</emission>
-</animation>
+</animation-->
 
 </PropertyList>

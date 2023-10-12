@@ -2,6 +2,16 @@ _setlistener("/sim/signals/fdm-initialized", func {
 	init_b1b();
 });
 
+#Adding Engines to FailMgr to allow for them to be killed with damage.
+var e0 = compat_failure_modes.fail_engine("engine");#
+FailureMgr.add_failure_mode("engines/engine", "Engine 1", e0);#
+var e1 = compat_failure_modes.fail_engine("engine[1]");#
+FailureMgr.add_failure_mode("engines/engine[1]", "Engine 2", e1);#
+var e2 = compat_failure_modes.fail_engine("engine[2]");#
+FailureMgr.add_failure_mode("engines/engine[2]", "Engine 3", e2);#
+var e3 = compat_failure_modes.fail_engine("engine[3]");#
+FailureMgr.add_failure_mode("engines/engine[3]", "Engine 4", e3);#
+
 var init_b1b = func {
 setprop("systems/refuel/serviceable", 'false');
 setprop("instrumentation/teravd/target-vfpm-exec", 0);
@@ -11,6 +21,7 @@ setprop("autopilot/settings/vertical-speed-fpm", 0);
 setprop("instrumentation/teravd/alt-reached", 1);
 setprop("instrumentation/teravd/ridge-clear", 0);
 setprop("autopilot/settings/target-pitch-deg", 2);
+setprop("controls/electric/battery-switch", 0);
 setprop("controls/switches/terra-report", 0);
 setprop("controls/switches/fltdir", 0.25);
 setprop("controls/switches/radar-range", 0.25);
@@ -27,72 +38,70 @@ setprop("controls/engines/engine[0]/cutoff", 1);#start with engines off
 setprop("controls/engines/engine[1]/cutoff", 1);
 setprop("controls/engines/engine[2]/cutoff", 1);
 setprop("controls/engines/engine[3]/cutoff", 1);
-setprop("consumables/fuel/tank[3]/level-gal_us", 5000);
-setprop("consumables/fuel/tank[5]/level-gal_us", 5000);
-setprop("instrumentation/cg/cg_mac_set", 25);
+#setprop("consumables/fuel/tank[3]/level-gal_us", 5000);
+#setprop("consumables/fuel/tank[5]/level-gal_us", 5000);
+setprop("instrumentation/cg/cg_mac_set", 70);
 setprop("instrumentation/cg/cg_mac", 30);
 setprop("instrumentation/tacan/frequencies/selected-channel[12]", 2);
 settimer(flightcontrols.fuelsweep, 1);
-setprop("ai/guided/id-number", 0);
-setprop("ai/guided/target-number", 0);
-setprop("ai/guided/id-release", 0);
-setprop("armament/sniper-pod/position-norm",0);
-setprop("armament/oso/bay-selected", 0);
-setprop("armament/mp-messaging", 0);
-setprop("armament/damage", 0);
-setprop("armament/bay0/launcher-pos", 0);
-setprop("armament/bay1/launcher-pos", 0);
-setprop("armament/bay2/launcher-pos", 0);
+# setprop("ai/guided/id-number", 0);
+# setprop("ai/guided/target-number", 0);
+# setprop("ai/guided/id-release", 0);
+# setprop("armament/sniper-pod/position-norm",0);
+# setprop("armament/oso/bay-selected", 0);
+# setprop("armament/bay0/launcher-pos", 0);
+# setprop("armament/bay1/launcher-pos", 0);
+# setprop("armament/bay2/launcher-pos", 0);
 
-#init the armaments
-setprop("armament/bay0/rack0",0);
-setprop("armament/bay0/rack0-armed",0);
-setprop("armament/bay0/rack1",0);
-setprop("armament/bay0/rack1-armed",0);
-setprop("armament/bay0/rack2",0);
-setprop("armament/bay0/rack2-armed",0);
-setprop("armament/bay0/rack3",0);
-setprop("armament/bay0/rack3-armed",0);
-setprop("armament/bay0/rack4",0);
-setprop("armament/bay0/rack4-armed",0);
-setprop("armament/bay0/rack5",0);
-setprop("armament/bay0/rack5-armed",0);
-setprop("armament/bay0/rack6",0);
-setprop("armament/bay0/rack6-armed",0);
-setprop("armament/bay0/rack7",0);
-setprop("armament/bay0/rack7-armed",0);
-setprop("armament/bay1/rack0",0);
-setprop("armament/bay1/rack0-armed",0);
-setprop("armament/bay1/rack1",0);
-setprop("armament/bay1/rack1-armed",0);
-setprop("armament/bay1/rack2",0);
-setprop("armament/bay1/rack2-armed",0);
-setprop("armament/bay1/rack3",0);
-setprop("armament/bay1/rack3-armed",0);
-setprop("armament/bay1/rack4",0);
-setprop("armament/bay1/rack4-armed",0);
-setprop("armament/bay1/rack5",0);
-setprop("armament/bay1/rack5-armed",0);
-setprop("armament/bay1/rack6",0);
-setprop("armament/bay1/rack6-armed",0);
-setprop("armament/bay1/rack7",0);
-setprop("armament/bay1/rack7-armed",0);
-setprop("armament/bay2/rack0",0);
-setprop("armament/bay2/rack0-armed",0);
-setprop("armament/bay2/rack1",0);
-setprop("armament/bay2/rack1-armed",0);
-setprop("armament/bay2/rack2",0);
-setprop("armament/bay2/rack2-armed",0);
-setprop("armament/bay2/rack3",0);
-setprop("armament/bay2/rack3-armed",0);
-setprop("armament/bay2/rack4",0);
-setprop("armament/bay2/rack4-armed",0);
-setprop("armament/bay2/rack5",0);
-setprop("armament/bay2/rack5-armed",0);
-setprop("armament/bay2/rack6",0);
-setprop("armament/bay2/rack6-armed",0);
-setprop("armament/bay2/rack7",0);
-setprop("armament/bay2/rack7-armed",0);
+# #init the armaments
+# setprop("armament/bay0/rack0",0);
+# setprop("armament/bay0/rack0-armed",0);
+# setprop("armament/bay0/rack1",0);
+# setprop("armament/bay0/rack1-armed",0);
+# setprop("armament/bay0/rack2",0);
+# setprop("armament/bay0/rack2-armed",0);
+# setprop("armament/bay0/rack3",0);
+# setprop("armament/bay0/rack3-armed",0);
+# setprop("armament/bay0/rack4",0);
+# setprop("armament/bay0/rack4-armed",0);
+# setprop("armament/bay0/rack5",0);
+# setprop("armament/bay0/rack5-armed",0);
+# setprop("armament/bay0/rack6",0);
+# setprop("armament/bay0/rack6-armed",0);
+# setprop("armament/bay0/rack7",0);
+# setprop("armament/bay0/rack7-armed",0);
+# setprop("armament/bay1/rack0",0);
+# setprop("armament/bay1/rack0-armed",0);
+# setprop("armament/bay1/rack1",0);
+# setprop("armament/bay1/rack1-armed",0);
+# setprop("armament/bay1/rack2",0);
+# setprop("armament/bay1/rack2-armed",0);
+# setprop("armament/bay1/rack3",0);
+# setprop("armament/bay1/rack3-armed",0);
+# setprop("armament/bay1/rack4",0);
+# setprop("armament/bay1/rack4-armed",0);
+# setprop("armament/bay1/rack5",0);
+# setprop("armament/bay1/rack5-armed",0);
+# setprop("armament/bay1/rack6",0);
+# setprop("armament/bay1/rack6-armed",0);
+# setprop("armament/bay1/rack7",0);
+# setprop("armament/bay1/rack7-armed",0);
+# setprop("armament/bay2/rack0",0);
+# setprop("armament/bay2/rack0-armed",0);
+# setprop("armament/bay2/rack1",0);
+# setprop("armament/bay2/rack1-armed",0);
+# setprop("armament/bay2/rack2",0);
+# setprop("armament/bay2/rack2-armed",0);
+# setprop("armament/bay2/rack3",0);
+# setprop("armament/bay2/rack3-armed",0);
+# setprop("armament/bay2/rack4",0);
+# setprop("armament/bay2/rack4-armed",0);
+# setprop("armament/bay2/rack5",0);
+# setprop("armament/bay2/rack5-armed",0);
+# setprop("armament/bay2/rack6",0);
+# setprop("armament/bay2/rack6-armed",0);
+# setprop("armament/bay2/rack7",0);
+# setprop("armament/bay2/rack7-armed",0);
 
 
 #init guidance info and wso panel.
@@ -104,7 +113,7 @@ for (var bay_num = 0; bay_num < 3; bay_num = bay_num + 1) {
 		setprop("ai/guided/bay"~bay_num~"/bomb["~bomb_num~"]/target-latitude-deg",0);
 	}
 }
-weapons.wso_mfd_update(1,0);
+# weapons.wso_mfd_update(1,0); Disabled temp due to weapon system upgrade work
 
 
 
@@ -681,7 +690,7 @@ sweep = getprop("controls/flight/wing-sweep");
 if ((flapsetting != 0) and (sweep != 1)) {
 
   controls.flapsDown(-1);
-  ltext = "Flaps can only be exteded at minimum wingsweep!";
+  ltext = "Flaps can only be extended at minimum wingsweep!";
   screen.log.write(ltext);
 }
 }
@@ -791,6 +800,8 @@ if (radran == 0.00) {
 }
 
 ##
+aircraft.livery.init("Models/Liveries");
+
 # tacan block
 ##
 var tacan = func(add) {
@@ -841,13 +852,76 @@ var oso_view_num = view.indexof("OSO view");
   }
 }
 
+## FLARES
+var flareCount = -1;
+var flareStart = -1;
+
+var loop_flare = func {
+    # Flare/chaff release
+    if (getprop("ai/submodels/submodel[24]/flare-release-snd") == nil) {
+        setprop("ai/submodels/submodel[24]/flare-release-snd", 0);
+        setprop("ai/submodels/submodel[24]/flare-release-out-snd", 0);
+    }
+    var flareOn = getprop("ai/submodels/submodel[24]/flare-release-cmd");
+    if (flareOn == 1 and getprop("ai/submodels/submodel[24]/flare-release") == 0
+            and getprop("ai/submodels/submodel[24]/flare-release-out-snd") == 0
+            and getprop("ai/submodels/submodel[24]/flare-release-snd") == 0) {
+        flareCount = getprop("ai/submodels/submodel[24]/count");
+        flareStart = getprop("sim/time/elapsed-sec");
+        setprop("ai/submodels/submodel[24]/flare-release-cmd", 0);
+        if (flareCount > 0) {
+            # release a flare
+            setprop("ai/submodels/submodel[24]/flare-release-snd", 1);
+            setprop("ai/submodels/submodel[24]/flare-release", 1);
+            setprop("rotors/main/blade[3]/flap-deg", flareStart);
+            setprop("rotors/main/blade[3]/position-deg", flareStart);
+            damage.flare_released();
+        } else {
+            # play the sound for out of flares
+            setprop("ai/submodels/submodel[24]/flare-release-out-snd", 1);
+        }
+    }
+    if (getprop("ai/submodels/submodel[24]/flare-release-snd") == 1 and (flareStart + 1) < getprop("sim/time/elapsed-sec")) {
+        setprop("ai/submodels/submodel[24]/flare-release-snd", 0);
+        setprop("rotors/main/blade[3]/flap-deg", 0);
+        setprop("rotors/main/blade[3]/position-deg", 0);#MP interpolates between numbers, so nil is better than 0.
+    }
+    if (getprop("ai/submodels/submodel[24]/flare-release-out-snd") == 1 and (flareStart + 1) < getprop("sim/time/elapsed-sec")) {
+        setprop("ai/submodels/submodel[24]/flare-release-out-snd", 0);
+    }
+    if (flareCount > getprop("ai/submodels/submodel[24]/count")) {
+        # A flare was released in last loop, we stop releasing flares, so user have to press button again to release new.
+        setprop("ai/submodels/submodel[24]/flare-release", 0);
+        flareCount = -1;
+    }
+}
+var flaretimer = maketimer(0.1, loop_flare);
+flaretimer.start();
+
 
 ##
 # nuc switch
 ##
 var nuc = func {
   if (getprop("controls/switches/nuc") == 1) {
-    ltext = "Sorry, Duke Nukem not available yet on this plane(t)!";
+    ltext = "Duke Nukem not available yet on this plane(t)!";
   screen.log.write(ltext);
   }
+}
+
+var vector_aicontacts_links = [];
+var DLRecipient = emesary.Recipient.new("DLRecipient");
+var startDLListener = func {
+    DLRecipient.radar = radar_system.dlnkRadar;
+    DLRecipient.Receive = func(notification) {
+        if (notification.NotificationType == "DatalinkNotification") {
+            #printf("DL recv: %s", notification.NotificationType);
+            if (me.radar.enabled == 1) {
+                vector_aicontacts_links = notification.vector;
+            }
+            return emesary.Transmitter.ReceiptStatus_OK;
+        }
+        return emesary.Transmitter.ReceiptStatus_NotProcessed;
+    };
+    emesary.GlobalTransmitter.Register(DLRecipient);
 }

@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+  <PropertyList>
+    <path>XB-Pedals.ac</path>
+        <params>
+        <aileron>/aircraft/surface-positions/aileron-pos-norm</aileron>
+        <elevator>/aircraft/surface-positions/elevator-pos-norm</elevator>
+        <rudder>/aircraft/surface-positions/rudder-pos-norm</rudder>
+    </params>
+
+    <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>25</max-m>
+    </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>LH.Pedal</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>0.04</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LH.Pedal</object-name>
+  <property>controls/gear/brake-left</property>
+  <factor>-5</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+  <center>
+   <x-m>0.00209</x-m>
+   <y-m>-0.17122</y-m>
+   <z-m>0.11021</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RH.Pedal</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>-0.04</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RH.Pedal</object-name>
+  <property>controls/gear/brake-right</property>
+  <factor>-5</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+  <center>
+   <x-m>0.00207</x-m>
+   <y-m>1.17882</y-m>
+   <z-m>0.11021</z-m>
+  </center>
+ </animation>
+ 
+</PropertyList>

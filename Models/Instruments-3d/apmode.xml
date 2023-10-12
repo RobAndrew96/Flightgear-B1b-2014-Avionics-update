@@ -5,8 +5,8 @@ sweat by maggse
 <PropertyList>
 
  <path>apmode.ac</path>
- 
- <!-- apmode button animations 
+
+ <!-- apmode button animations
 
 <animation>
 	 <type>material</type>
@@ -23,13 +23,13 @@ sweat by maggse
 		 <red>0.1</red>
 		 <green>0.3</green>
 		 <blue>0.1</blue>
-		 
+
 	 </emission>
 </animation>-->
 
 <!-- osg text animation-->
 
-<text>
+<!-- text>
   <name>alt_txt</name>
   <offsets>
     <x-m>-0.025</x-m>
@@ -323,7 +323,7 @@ sweat by maggse
   <font>lucida.txf</font>
   <character-size type="double">0.007</character-size>
   <character-aspect-ratio type="double">1.1</character-aspect-ratio>
-</text>
+</text -->
 
 <animation>
 	 <type>material</type>
@@ -343,22 +343,12 @@ sweat by maggse
 	 <object-name>spd_hold_txt</object-name>
 	 <object-name>spd_ptch_txt</object-name>
 	 <object-name>spd_ptch_hold_txt</object-name>
-	 
-	 <diffuse>
-	   <red>0.4</red>
-	   <green>0.9</green>
-	   <blue>0.4</blue>
-	 </diffuse>
-         <ambient>
-	   <red>0.4</red>
-	   <green>0.9</green>
-	   <blue>0.4</blue>
-	 </ambient>
 	 <emission>
-		 <red>0.4</red>
-		 <green>0.9</green>
-		 <blue>0.4</blue>
-	 </emission>
+		 <red>0.9</red>
+		 <green>0.5</green>
+		 <blue>0.9</blue>
+		 <factor-prop>controls/lighting/instruments-norm</factor-prop>
+	</emission>
 </animation>
 
 <animation>
@@ -374,9 +364,9 @@ sweat by maggse
 		 <factor-prop>controls/switches/apmode/alt-hold</factor-prop>
 	 </emission>
 </animation>
- 
+
  <!-- clickable buttons block (osg only!) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-      
+
       <animation>
 	      <type>pick</type>
 	      <object-name>apmode_alt</object-name>
@@ -394,7 +384,7 @@ sweat by maggse
 		 </binding>
 	      </action>
       </animation>
-      
+
       <animation>
 	      <type>material</type>
 	      <object-name>apmode_vfpm</object-name>
@@ -406,9 +396,9 @@ sweat by maggse
 		      <factor-prop>controls/switches/apmode/vfpm-hold</factor-prop>
 	      </emission>
 </animation>
-      
+
       <!-- clickable buttons block (osg only!) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-      
+
       <animation>
 	      <type>pick</type>
 	      <object-name>apmode_vfpm</object-name>
@@ -426,7 +416,7 @@ sweat by maggse
 		 </binding>
 	      </action>
       </animation>
-      
+
       <animation>
 	      <type>material</type>
 	      <object-name>apmode_ptch</object-name>
@@ -438,9 +428,9 @@ sweat by maggse
 		      <factor-prop>controls/switches/apmode/ptch-hold</factor-prop>
 	      </emission>
 </animation>
-      
+
       <!-- clickable buttons block (osg only!) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-      
+
       <animation>
 	      <type>pick</type>
 	      <object-name>apmode_ptch</object-name>
@@ -458,7 +448,7 @@ sweat by maggse
 		 </binding>
 	      </action>
       </animation>
- 
+
       <animation>
 	      <type>material</type>
 	      <object-name>apmode_bhdg</object-name>
@@ -470,9 +460,9 @@ sweat by maggse
 		      <factor-prop>controls/switches/apmode/bhdg-hold</factor-prop>
 	      </emission>
 </animation>
-      
+
       <!-- clickable buttons block (osg only!) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-      
+
       <animation>
 	      <type>pick</type>
 	      <object-name>apmode_bhdg</object-name>
@@ -490,7 +480,7 @@ sweat by maggse
 		 </binding>
 	      </action>
       </animation>
-      
+
       <animation>
 	      <type>material</type>
 	      <object-name>apmode_thdg</object-name>
@@ -502,9 +492,9 @@ sweat by maggse
 		      <factor-prop>controls/switches/apmode/thdg-hold</factor-prop>
 	      </emission>
 </animation>
-      
+
       <!-- clickable buttons block (osg only!) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-      
+
       <animation>
 	      <type>pick</type>
 	      <object-name>apmode_thdg</object-name>
@@ -522,7 +512,7 @@ sweat by maggse
 		 </binding>
 	      </action>
       </animation>
-      
+
       <animation>
 	      <type>material</type>
 	      <object-name>apmode_spd</object-name>
@@ -534,9 +524,9 @@ sweat by maggse
 		      <factor-prop>controls/switches/apmode/spd-hold</factor-prop>
 	      </emission>
 </animation>
-      
+
       <!-- clickable buttons block (osg only!) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-      
+
       <animation>
 	      <type>pick</type>
 	      <object-name>apmode_spd</object-name>
@@ -554,7 +544,7 @@ sweat by maggse
 		 </binding>
 	      </action>
       </animation>
-      
+
       <animation>
 	      <type>material</type>
 	      <object-name>apmode_spdptch</object-name>
@@ -566,9 +556,9 @@ sweat by maggse
 		      <factor-prop>controls/switches/apmode/spdptch-hold</factor-prop>
 	      </emission>
 </animation>
-      
+
       <!-- clickable buttons block (osg only!) xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-      
+
       <animation>
 	      <type>pick</type>
 	      <object-name>apmode_spdptch</object-name>
@@ -586,7 +576,7 @@ sweat by maggse
 		 </binding>
 	      </action>
       </animation>
-      
+
       <animation>
 	      <type>material</type>
 	      <object-name>apmode_terrflw</object-name>
@@ -597,17 +587,66 @@ sweat by maggse
 		      <factor-prop>controls/switches/terrain-follow</factor-prop>
 	      </emission>
 </animation>
+      <animation>
+	      <type>pick</type>
+	      <object-name>apmode_terrflw</object-name>
+	      <action>
+		      <button>0</button>
+		      <repeatable>true</repeatable>
+		      <interval-sec>0.5</interval-sec>
+		      <binding>
+			      <command>property-toggle</command>
+			      <property>controls/switches/terrain-follow</property>
+		      </binding>
+		      <binding>
+			      <command>nasal</command>
+			      <script>b1b.checkapmode()</script>
+		 </binding>
+	      </action>
+      </animation>
+
+<!-- Label Text -->
+
+<text>
+	<name>LabelText</name>
+	<type type="string">literal</type>
+		<text type="string">AutoPilot</text>
+	<draw-text type="bool">true</draw-text>
+	<font>Helvetica.txf</font>
+		<character-size type="double">0.012</character-size>
+		<character-aspect-ratio type="double">1.0</character-aspect-ratio>
+	<axis-alignment>yz-plane</axis-alignment>
+	<max-height>0.2</max-height>
+	<max-width>0.07</max-width>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+	<alignment>center-center</alignment>
+	<offsets>
+		<x-m> 0.04</x-m>
+		<y-m> 0.0 </y-m>
+		<z-m> 0.0 </z-m>
+	</offsets>
+</text>
 
 <animation>
 	<type>material</type>
-	<object-name>apmode</object-name>
+		<object-name>LabelText</object-name>
 	<emission>
-		<red>0.4</red>
-		<green>0.3</green>
-		<blue>0.2</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+		<red>1.0</red>
+		<green>0.8</green>
+		<blue>0.0</blue>
 	</emission>
 </animation>
- 
+
+<animation>
+	<type>select</type>
+		<object-name>LabelText</object-name>
+	<condition>
+		<property>/sim/panel-hotspots</property>
+	</condition>
+</animation>
+
 
 </PropertyList>

@@ -40,11 +40,11 @@ sweat by maggse
 <animation>
 	<type>material</type>
 	<object-name>switch_flaps</object-name>
-	<emission>
-		<red>0.6</red>
-		<green>0.4</green>
-		<blue>0.3</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+	 <emission>
+		 <red>0.9</red>
+		 <green>0.5</green>
+		 <blue>0.9</blue>
+		 <factor-prop>controls/lighting/instruments-norm</factor-prop>
 	</emission>
 </animation>
 

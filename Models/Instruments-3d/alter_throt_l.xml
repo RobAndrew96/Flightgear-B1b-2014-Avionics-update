@@ -9,7 +9,7 @@ maggse
 <!-- afterburner switches -->
 <animation>
 	<type>rotate</type>
-	<object-name>alter_throt.017</object-name>
+	<object-name>alter_throt.1.L</object-name>
 	<property>controls/switches/engines/afterburner[0]</property>
 	<interpolation>
 		<entry>
@@ -27,15 +27,15 @@ maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>0.165</y-m>
-		<z-m>0.064</z-m>
+		<x-m>0.00385</x-m>
+		<y-m>0.27739</y-m>
+		<z-m>0.08547</z-m>
 	</center>
 </animation>
 
 <animation>
 	<type>pick</type>
-	<object-name>alter_throt.017</object-name>
+	<object-name>alter_throt.1.L</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>true</repeatable>
@@ -49,7 +49,7 @@ maggse
 
 <animation>
 	<type>rotate</type>
-	<object-name>alter_throt.016</object-name>
+	<object-name>alter_throt.2.L</object-name>
 	<property>controls/switches/engines/afterburner[1]</property>
 	<interpolation>
 		<entry>
@@ -67,15 +67,15 @@ maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>0.165</y-m>
-		<z-m>0.064</z-m>
+		<x-m>0.00385</x-m>
+		<y-m>0.25923</y-m>
+		<z-m>0.08455</z-m>
 	</center>
 </animation>
 
 <animation>
 	<type>pick</type>
-	<object-name>alter_throt.016</object-name>
+	<object-name>alter_throt.2.L</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>true</repeatable>
@@ -89,7 +89,7 @@ maggse
 
 <animation>
 	<type>rotate</type>
-	<object-name>alter_throt.015</object-name>
+	<object-name>alter_throt.3.L</object-name>
 	<property>controls/switches/engines/afterburner[2]</property>
 	<interpolation>
 		<entry>
@@ -107,15 +107,15 @@ maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>0.165</y-m>
-		<z-m>0.064</z-m>
+		<x-m>0.00385</x-m>
+		<y-m>0.29017</y-m>
+		<z-m>0.08317</z-m>
 	</center>
 </animation>
 
 <animation>
 	<type>pick</type>
-	<object-name>alter_throt.015</object-name>
+	<object-name>alter_throt.3.L</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>true</repeatable>
@@ -129,7 +129,7 @@ maggse
 
 <animation>
 	<type>rotate</type>
-	<object-name>alter_throt.014</object-name>
+	<object-name>alter_throt.4.L</object-name>
 	<property>controls/switches/engines/afterburner[3]</property>
 	<interpolation>
 		<entry>
@@ -147,15 +147,15 @@ maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>0.165</y-m>
-		<z-m>0.064</z-m>
+		<x-m>0.00385</x-m>
+		<y-m>0.31693</y-m>
+		<z-m>0.08300</z-m>
 	</center>
 </animation>
 
 <animation>
 	<type>pick</type>
-	<object-name>alter_throt.014</object-name>
+	<object-name>alter_throt.4.L</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>true</repeatable>
@@ -166,31 +166,86 @@ maggse
 		</binding>
 	</action>
 </animation>
- 
+
  <animation>
 	<type>material</type>
-	<object-name>alter_throt.017</object-name>
-	<object-name>alter_throt.016</object-name>
-        <object-name>alter_throt.015</object-name>
-	<object-name>alter_throt.014</object-name>
-	<emission>
-		<red>0.6</red>
-		<green>0.3</green>
-		<blue>0.2</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+	<object-name>alter_throt.1.L</object-name>
+	<object-name>alter_throt.2.L</object-name>
+    <object-name>alter_throt.3.L</object-name>
+	<object-name>alter_throt.4.L</object-name>
+	<object-name>ADC</object-name>
+	<object-name>ADC-SEL</object-name>
+    <object-name>EMTR</object-name>
+	<object-name>FDC</object-name>
+	<object-name>FDC-ADC</object-name>
+	<object-name>FLT-CONTR-TRIM</object-name>
+    <object-name>FLT-INST-TEST</object-name>
+	<object-name>HDG</object-name>
+	<object-name>HDG-ADC</object-name>
+	<object-name>HF</object-name>
+    <object-name>ICS</object-name>
+	<object-name>ICS-TFR</object-name>
+	<object-name>LS/TT</object-name>
+	<object-name>Stby-Pitch</object-name>
+    <object-name>StbyPitchLabel</object-name>
+	<object-name>TFR/TRR</object-name>
+	<object-name>TACAN</object-name>
+	<object-name>UHF.1</object-name>
+    <object-name>UHF.2</object-name>
+	<object-name>VSI</object-name>
+	<object-name>YamLabel</object-name>
+	<object-name>Yaw</object-name>
+    <object-name>switch_oh.059</object-name>
+	<object-name>switch_oh.065</object-name>
+	 <emission>
+		 <red>0.9</red>
+		 <green>0.5</green>
+		 <blue>0.9</blue>
+		 <factor-prop>controls/lighting/instruments-norm</factor-prop>
 	</emission>
 </animation>
 
- <animation>
-	<type>material</type>
-	<object-name>fltdir.003</object-name>
+<!-- Label Text -->
 
+<text>
+	<name>LabelText</name>
+	<type type="string">literal</type>
+		<text type="string">Alt_Throt_L</text>
+	<draw-text type="bool">true</draw-text>
+	<font>Helvetica.txf</font>
+		<character-size type="double">0.012</character-size>
+		<character-aspect-ratio type="double">1.0</character-aspect-ratio>
+	<axis-alignment>yz-plane</axis-alignment>
+	<max-height>0.2</max-height>
+	<max-width>0.07</max-width>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+	<alignment>center-center</alignment>
+	<offsets>
+		<x-m> 0.04</x-m>
+		<y-m> 0.0 </y-m>
+		<z-m> 0.0 </z-m>
+	</offsets>
+</text>
+
+<animation>
+	<type>material</type>
+		<object-name>LabelText</object-name>
 	<emission>
-		<red>0.4</red>
-		<green>0.2</green>
-		<blue>0.15</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+		<red>1.0</red>
+		<green>0.8</green>
+		<blue>0.0</blue>
 	</emission>
+</animation>
+
+<animation>
+	<type>select</type>
+		<object-name>LabelText</object-name>
+	<condition>
+		<property>/sim/panel-hotspots</property>
+	</condition>
 </animation>
 
 </PropertyList>

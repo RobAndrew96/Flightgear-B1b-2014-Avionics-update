@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>TO-LDG.ac</path>
+
+  <animation>
+    <object-name>Anti-skid-switch</object-name>
+    <object-name>Data-case-lt</object-name>
+    <object-name>Emerg</object-name>
+    <object-name>Nuts</object-name>
+    <object-name>Parking-brake</object-name>
+    <object-name>PowerNut</object-name>
+    <object-name>TO-LD-Switch</object-name>
+    <object-name>TO-LDG-Panel</object-name>
+    <object-name>light-land-toggle</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Anti-skid-switch</object-name>
+    <object-name>Data-case-lt</object-name>
+    <object-name>Emerg</object-name>
+    <object-name>Nuts</object-name>
+    <object-name>Parking-brake</object-name>
+    <object-name>PowerNut</object-name>
+    <object-name>TO-LD-Switch</object-name>
+    <object-name>TO-LDG-Panel</object-name>
+    <object-name>light-land-toggle</object-name>
+	 <emission>
+		 <red>0.9</red>
+		 <green>0.5</green>
+		 <blue>0.9</blue>
+		 <factor-prop>controls/lighting/instruments-norm</factor-prop>
+	</emission>
+  </animation>
+
+ <animation>
+   <type>translate</type>
+   <object-name>Parking-brake</object-name>
+   <property>/controls/gear/brake-parking</property>
+   <factor>-0.004</factor>
+   <center>
+    <x-m>-0.026</x-m>
+    <y-m>-0.001</y-m>
+    <z-m>0.000</z-m>
+   </center>
+   <axis>
+    <x>0</x>
+    <y>0</y>
+    <z>1</z>
+   </axis>
+  </animation>
+
+  <animation>
+   <type>pick</type>
+   <object-name>Parking-brake</object-name>
+   <action>
+    <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/gear/brake-parking</property>
+        <repeatable>false</repeatable>
+       </binding>
+    </action>
+  </animation> 
+
+ <animation>
+	 <type>select</type>
+	 <object-name>Parking-brake-light</object-name>
+	 <condition>
+		 <equals>
+			 <property>/controls/gear/brake-parking</property>
+			 <value>1.0</value>
+		 </equals>
+	 </condition>
+ </animation>
+ <animation>
+	 <type>material</type>
+	 <object-name>Parking-brake-light</object-name>
+	 <emission>
+		 <red>0.8</red>
+		 <green>0.0</green>
+		 <blue>0.0</blue>
+		 <factor-prop>/controls/gear/brake-parking</factor-prop>
+	 </emission>
+</animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>Anti-skid-switch</object-name>
+   <property>/controls/gear/antiskid</property>
+   <factor>-60</factor>
+   <min>1</min>
+   <max>0</max>
+   <center>
+    <x-m>-0.02686</x-m>
+    <y-m>-0.04707</y-m>
+    <z-m> 0.00416</z-m>
+   </center>
+   <axis>
+    <x> 0</x>
+    <y>-1</y>
+    <z> 0</z>
+   </axis>
+  </animation>
+
+  <animation>
+   <type>pick</type>
+   <object-name>Anti-skid-switch</object-name>
+   <action>
+    <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/gear/antiskid</property>
+        <repeatable>false</repeatable>
+      </binding>
+   </action>
+  </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>light-land-toggle</object-name>
+   <property>/sim/rendering/als-secondary-lights/use-landing-light</property>
+   <factor>60</factor>
+   <min>0</min>
+   <max>1</max>
+   <center>
+    <x-m> 0.04699</x-m>
+    <y-m> 0.04552</y-m>
+    <z-m> 0.00244</z-m>
+   </center>
+   <axis>
+    <x>0</x>
+    <y>-1</y>
+    <z>0</z>
+   </axis>
+  </animation>
+
+  <animation>
+   <type>pick</type>
+   <object-name>light-land-toggle</object-name>
+   <action>
+    <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>/sim/rendering/als-secondary-lights/use-landing-light</property>
+        <factor>30</factor>
+        <min>0</min>
+        <max>1</max>
+      </binding>
+   </action>
+ </animation>
+
+   <animation>
+   <type>pick</type>
+   <object-name>light-land-toggle</object-name>
+   <action>
+    <button>1</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>/sim/rendering/als-secondary-lights/use-landing-light</property>
+        <factor>30</factor>
+        <min>0</min>
+        <max>1</max>
+      </binding>
+   </action>
+ </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>TO-LD-Switch</object-name>
+   <property>controls/gear/nose-wheel-steering</property>
+   <factor>60</factor>
+   <min>0</min>
+   <max>1</max>
+   <center>
+    <x-m>0.04824</x-m>
+    <y-m>0.000125</y-m>
+    <z-m>0.002954</z-m>
+   </center>
+   <axis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+   </axis>
+  </animation>
+
+  <animation>
+   <type>pick</type>
+   <object-name>TO-LD-Switch</object-name>
+   <action>
+    <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear/nose-wheel-steering</property>
+        <factor>30</factor>
+        <min>0</min>
+        <max>1</max>
+      </binding>
+   </action>
+ </animation>
+
+</PropertyList>

@@ -5,18 +5,18 @@ more to come :-)
 -->
 
 <PropertyList>
-  
+
 	<path>Instruments-3d/sweep_scale.ac</path>
-	
+
   <offsets>
 	  <x-m>-0.42</x-m>
 	  <y-m>0.15</y-m>
           <z-m>-0.297</z-m>
     <pitch-deg>0</pitch-deg>
-    
+
   </offsets>
-  
-  <animation>
+
+  <!--animation>
 	  <type>select</type>
 	  <object-name>fuel_cov.007</object-name>
 	  <condition>
@@ -25,163 +25,77 @@ more to come :-)
 			  <value>1.0</value>
 		  </greater-than>
 	  </condition>
- </animation>
-  
+ </animation -->
+
   <!--   cockpit -->
-  
+
     <model>
-	  <name>pfdb1-copilot</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/pfdb1.xml</path>
+	  <name>copilot apmode</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/cp_apmode.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.435</y-m>
-		  <z-m>1.197</z-m>
+		  <x-m>-18.090</x-m>
+		  <y-m> 1.070</y-m>
+		  <z-m> 1.255</z-m>
+		  <roll-deg>20</roll-deg>
+	  </offsets>
+  </model>
+
+ <model>
+	  <name>copilot clock</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/clock.xml</path>
+	  <offsets>
+		  <x-m>-18.214</x-m>
+		  <y-m> 0.680</y-m>
+		  <z-m> 1.076</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
+    <model>
+	  <name>airpath_compass</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/Compass.xml</path>
+	  <offsets>
+		  <x-m>-18.098</x-m>
+		  <y-m>-0.128</y-m>
+		  <z-m> 1.668</z-m>
+		<roll-deg>0</roll-deg>
+       <pitch-deg>-2</pitch-deg>
+	  </offsets>
+  </model>
   <model>
-	  <name>hud alt-copilot</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/hud_alt.xml</path>
+	  <name>ndb1-copilot</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/nd.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.828</y-m>
-		  <z-m>1.185</z-m>
+		  <x-m>-18.215</x-m>
+		  <y-m>0.584</y-m>
+		  <z-m>0.980</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
-  <model>
-	  <name>hud mach-copilot</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/hud_mach.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.853</y-m>
-		  <z-m>1.185</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
+
+
     <model>
 	  <name>cautionind-copilot</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/caution_ind.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.800</y-m>
-		  <z-m>1.235</z-m>
+		  <x-m>-18.212</x-m>
+		  <y-m> 0.785</y-m>
+		  <z-m> 1.232</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
-  </model> 
+  </model>
 
- <model>
-	  <name>pfr command set copilot</name>
-	  <path>Aircraft/B1B/Models/Instruments-3d/pfr-command-set.ac</path>   
+    <model>
+	  <name>cautionind-pilot</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/p_caution_ind.xml</path>
 	  <offsets>
-		  <x-m>-18.216</x-m>
-		  <y-m>0.340</y-m>
-		  <z-m>0.959</z-m>
+		  <x-m>-18.217</x-m>
+		  <y-m>-0.338</y-m>
+		  <z-m>1.232</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
-  </model>  
+  </model>
 
-  <model>
-	  <name>pfdb1</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/pfdb1.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.675</y-m>
-		  <z-m>1.197</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>hud alt</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/hud_alt.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.288</y-m>
-		  <z-m>1.185</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>hud mach</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/hud_mach.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.253</y-m>
-		  <z-m>1.185</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>eng</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/eng_ind.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.210</y-m>
-		  <z-m>1.210</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>cg mac</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/mac_ind.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.205</y-m>
-		  <z-m>1.210</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>fcgms</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/fcgms.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.270</y-m>
-		  <z-m>1.160</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>radaralt</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/radar_alt.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.530</y-m>
-		  <z-m>1.315</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>hsi</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/nd.xml</path>
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.675</y-m>
-		  <z-m>0.998</z-m>
-		  <pitch-deg>-1</pitch-deg>
-	  </offsets>
-  </model>
-  
- <model>
-	  <name>clock</name>
-	  <path>Aircraft/Instruments-3d/clock/clock.xml</path>   
-	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.895</y-m>
-		  <z-m>1.110</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model> 
 
  <model>
 	  <name>MFD-gaps</name>
@@ -189,7 +103,7 @@ more to come :-)
 	  <offsets>
 		  <x-m>-18.111</x-m>
 		  <y-m>-0.593</y-m>
-		  <z-m>1.169</z-m>
+		  <z-m>1.16</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model> 
@@ -200,7 +114,7 @@ more to come :-)
 	  <offsets>
 		  <x-m>-18.111</x-m>
 		  <y-m>0.516</y-m>
-		  <z-m>1.169</z-m>
+		  <z-m>1.16</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model> 
@@ -211,7 +125,7 @@ more to come :-)
 	  <offsets>
 		  <x-m>-18.112</x-m>
 		  <y-m>-0.780</y-m>
-		  <z-m>1.169</z-m>
+		  <z-m>1.16</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>  
@@ -222,7 +136,7 @@ more to come :-)
 	  <offsets>
 		  <x-m>-18.112</x-m>
 		  <y-m>-0.593</y-m>
-		  <z-m>1.169</z-m>
+		  <z-m>1.16</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model> 
@@ -233,7 +147,7 @@ more to come :-)
 	  <offsets>
 		  <x-m>-18.112</x-m>
 		  <y-m>0.328</y-m>
-		  <z-m>1.169</z-m>
+		  <z-m>1.16</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>  
@@ -244,380 +158,461 @@ more to come :-)
 	  <offsets>
 		  <x-m>-18.112</x-m>
 		  <y-m>0.516</y-m>
-		  <z-m>1.169</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model> 
-
- <model>
-	  <name>Pump-panel</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/pump-panel.xml</path>   
-	  <offsets>
-		  <x-m>-18.203</x-m>
-		  <y-m>0.058</y-m>
-		  <z-m>0.829</z-m>
+		  <z-m>1.16</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model> 
 
   <model>
-	  <name>Airspeed-indicator</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/airspeed_indicator.xml</path>   
-	  <offsets>
-		  <x-m>-18.187</x-m>
-		  <y-m>-0.338</y-m>
-		  <z-m>1.251</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model> 
+    <name>copilot fltdir</name>
+    <path>Aircraft/B-1B/Models/Instruments-3d/fltdir.xml</path>
+    <offsets>
+      <x-m>-18.217</x-m>
+      <y-m>0.353</y-m>
+      <z-m>0.85</z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
 
   <model>
-	  <name>Airspeed-backing</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/airspeed-indicator-backing.ac</path>   
+	  <name>102kt</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/102kt.xml</path>
 	  <offsets>
-		  <x-m>-18.239</x-m>
-		  <y-m>-0.337</y-m>
-		  <z-m>1.251</z-m>
+		  <x-m>-18.212</x-m>
+		  <y-m>-0.312</y-m>
+		  <z-m> 1.245</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
-  </model> 
+  </model>
 
- <model>
-	  <name>PFR-command-set</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/pfr-command-set.ac</path>   
+
+  <model>
+	  <name>eng</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/eng_ind.xml</path>
+	  <offsets>
+		  <x-m>-18.214</x-m>
+		  <y-m>-0.185</y-m>
+		  <z-m> 1.200</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>cg mac</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/mac_ind.xml</path>
+	  <offsets>
+		  <x-m>-18.211 </x-m>
+		  <y-m>-0.213</y-m>
+		  <z-m> 1.208</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>fcgms</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/fcgms.xml</path>
 	  <offsets>
 		  <x-m>-18.216</x-m>
-		  <y-m>-0.826</y-m>
-		  <z-m>0.959</z-m>
+		  <y-m>-0.282</y-m>
+		  <z-m> 1.200</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
-  </model> 
+  </model>
+
+  <model>
+	  <name>fuel_flow</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/fuel_flow.xml</path>
+	  <offsets>
+		  <x-m>-18.218</x-m>
+		  <y-m> 0.182</y-m>
+		  <z-m> 1.160</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+
+  <model>
+	  <name>ndb1</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/nd.xml</path>
+	  <offsets>
+		  <x-m>-18.214</x-m>
+		  <y-m>-0.825</y-m>
+		  <z-m> 0.975</z-m>
+		  <pitch-deg>-1</pitch-deg>
+	  </offsets>
+  </model>
+
+ <model>
+	  <name>clock</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/clock.xml</path>
+	  <offsets>
+		  <x-m>-18.214</x-m>
+		  <y-m>-0.910</y-m>
+		  <z-m> 1.075</z-m>
+		  <pitch-deg>-1</pitch-deg>
+	  </offsets>
+  </model>
 
  <model>
 	  <name>gearind</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/gear_ind.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.093</y-m>
-		  <z-m>0.954</z-m>
+		  <x-m>-18.217</x-m>
+		  <y-m>-0.078</y-m>
+		  <z-m>0.958</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
-  <model>
-	  <name>cautionind</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/caution_ind.xml</path>
+
+ <model>
+	  <name>bomb-doors</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/weapons-release-panel.ac</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.330</y-m>
-		  <z-m>1.235</z-m>
+		  <x-m>-18.183</x-m>
+		  <y-m>-0.195</y-m>
+		  <z-m>0.97</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
-  </model> 
+  </model>
 
   <model>
 	  <name>fltdir</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/fltdir.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.738</y-m>
-		  <z-m>0.860</z-m>
+		  <x-m>-18.218</x-m>
+		  <y-m>-0.754</y-m>
+		  <z-m>0.85</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
-  <model>
-	  <name>fltdir-copilot</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/fltdir.xml</path>
+  <!--model>
+	  <name>rwr</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/rwr/rwr.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.446</y-m>
-		  <z-m>0.860</z-m>
+		  <x-m>-19.200</x-m>
+		  <y-m> 0.000</y-m>
+		  <z-m> 0.750</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
-  </model>
+  </model-->
 
   <model>
 	  <name>reporter-lights</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/rep_lights.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.591</y-m>
-		  <z-m>0.771</z-m>
-		  <pitch-deg>0</pitch-deg>
+		  <x-m>-18.212</x-m>
+		  <y-m>-0.624</y-m>
+		  <z-m> 0.75</z-m>
+		  <pitch-deg>-1</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>fireind</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/fire_ind.xml</path>
 	  <offsets>
-		  <x-m>-18.180</x-m>
+		  <x-m>-18.182</x-m>
 		  <y-m>0.154</y-m>
-		  <z-m>1.242</z-m>
+		  <z-m>1.230</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
+ <model>
+	  <name>Pump-panel</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/Pump-Panel.xml</path>
+	  <offsets>
+		  <x-m> 0.262</x-m>
+		  <y-m>-0.345</y-m>
+		  <z-m> 1.060</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
   <model>
 	  <name>apmode</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/apmode.xml</path>
 	  <offsets>
-		  <x-m>-18.150</x-m>
-		  <y-m>-0.620</y-m>
-		  <z-m>0.920</z-m>
-		  <roll-deg>-22</roll-deg>
+		  <x-m>-18.045</x-m>
+		  <y-m>-0.630</y-m>
+		  <z-m> 0.990</z-m>
+		  <roll-deg>-20</roll-deg>
+          <heading-deg>-4</heading-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>alt</name>
-	  <path>Aircraft/Instruments-3d/alt-2/alt2-3d.xml</path>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/alt2-3d.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.346</y-m>
-		  <z-m>1.170</z-m>
+		  <x-m>-18.212</x-m>
+		  <y-m>-0.315</y-m>
+		  <z-m>1.175</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>vsi</name>
-	  <path>Aircraft/Instruments-3d/vsi-6/vsi-3d.xml</path>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/vsi-3d.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.432</y-m>
-		  <z-m>1.170</z-m>
+		  <x-m>-18.212</x-m>
+		  <y-m>-0.400</y-m>
+		  <z-m>1.175</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>ai</name>
-	  <path>Aircraft/Instruments-3d/ai/ai.xml</path>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/ai.xml</path>
 	  <offsets>
-		  <x-m>-18.200</x-m>
-		  <y-m>-0.433</y-m>
-		  <z-m>1.270</z-m>
+		  <x-m>-18.238</x-m>
+		  <y-m>-0.400</y-m>
+		  <z-m>1.260</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>sweep</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/sweep_ind.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>-0.336</y-m>
-		  <z-m>1.025</z-m>
+		  <x-m>-18.214</x-m>
+		  <y-m>-0.300</y-m>
+		  <z-m> 1.035</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
-  <model>
-	  <name>bomb-doors</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/weapons-release-panel.ac</path>
-	  <offsets>
-		  <x-m>-18.179</x-m>
-		  <y-m>-0.216</y-m>
-		  <z-m>0.958</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
+
   <model>
 	  <name>terrain_flw</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/terflw_ind.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.105</y-m>
-		  <z-m>0.910</z-m>
+		  <x-m> 0.260</x-m>
+		  <y-m>-0.310</y-m>
+		  <z-m> 1.060</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>display big</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/display_big.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.105</y-m>
-		  <z-m>0.900</z-m>
+		  <x-m>-18.217</x-m>
+		  <y-m> 0.090</y-m>
+		  <z-m> 0.905</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>fuel indicator</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/fuel_ind.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.186</y-m>
-		  <z-m>1.012</z-m>
+		  <x-m>-18.212</x-m>
+		  <y-m> 0.13890</y-m>
+		  <z-m> 1.055</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>fuel valves</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/fuelvalves.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.128</y-m>
-		  <z-m>1.122</z-m>
+		  <x-m> 0.2630</x-m>
+		  <y-m>-0.3450</y-m>
+		  <z-m> 1.025</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>fuel positions</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/fuelpos_ind.xml</path>
 	  <offsets>
-		  <x-m>-18.210</x-m>
-		  <y-m>0.106</y-m>
-		  <z-m>0.992</z-m>
+		  <x-m>-18.212</x-m>
+		  <y-m> 0.062</y-m>
+		  <z-m> 1.0228</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <!-- left console -->
+        <model>
+        <path>Aircraft/B-1B/Models/pedals.xml</path>
+        <offsets>
+            <x-m>-18.300</x-m>
+            <y-m>-0.660</y-m>
+            <z-m>0.470</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
   <model>
 	  <name>sweep lever</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/sweep_lever.xml</path>
 	  <offsets>
-		  <x-m>-17.770</x-m>
-		  <y-m>-1.075</y-m>
-		  <z-m>0.770</z-m>
+		  <x-m>-17.790</x-m>
+		  <y-m>-1.065</y-m>
+		  <z-m>0.720</z-m>
 		  <pitch-deg>0</pitch-deg>
 		  <heading-deg>-5</heading-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>throttle2</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/throttle_left.xml</path>
 	  <offsets>
-		  <x-m>-17.550</x-m>
-		  <y-m>-0.823</y-m>
-		  <z-m>0.870</z-m>
+		  <x-m>-17.610</x-m>
+		  <y-m>-0.794</y-m>
+		  <z-m>0.798</z-m>
 		  <pitch-deg>-90</pitch-deg>
-		  <roll-deg>-5</roll-deg>
+		  <heading-deg>-2</heading-deg>
 	  </offsets>
   </model>
+
   <model>
+	  <name>B-1BFS</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/B-1BFS.xml</path>
+	  <offsets>
+		  <x-m>0.465</x-m>
+		  <y-m>-0.160</y-m>
+		  <z-m>0.465</z-m>
+	  </offsets>
+  </model>
+B-1BFS
+  <model>
+	  <name>CP-FS</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/B-1BFS.xml</path>
+	  <offsets>
+		  <x-m>0.465</x-m>
+		  <y-m>0.900</y-m>
+		  <z-m>0.465</z-m>
+	  </offsets>
+  </model>
+
+ <model>
 	  <name>alter throt left</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/alter_throt_l.xml</path>
 	  <offsets>
-		  <x-m>-17.620</x-m>
-		  <y-m>-1.266</y-m>
-		  <z-m>0.907</z-m>
+		  <x-m>-17.610</x-m>
+		  <y-m>-1.261</y-m>
+		  <z-m>0.877</z-m>
 		  <pitch-deg>-90</pitch-deg>
-		  <roll-deg>-3</roll-deg>
+		  <roll-deg>0</roll-deg>
+          <heading-deg>-2</heading-deg>
 	  </offsets>
   </model>
-  
+
   <!-- middle console -->
   <model>
 	  <name>engine switch</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/eng_switch.xml</path>
 	  <offsets>
-		  <x-m>-17.650</x-m>
+		  <x-m>-17.597</x-m>
 		  <y-m>0.270</y-m>
 		  <z-m>0.710</z-m>
 		  <pitch-deg>-90</pitch-deg>
 	  </offsets>
-  </model>  
-
-  <model>
-	  <name>Flt ctrl pwr panel</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/flt_ctrl_pwr.ac</path>
-	  <offsets>
-		  <x-m>-18.099</x-m>
-		  <y-m>-0.119</y-m>
-		  <z-m>0.713</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model> 
-  <model>
-	  <name>IFF panel</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/iff_panel.ac</path>
-	  <offsets>
-		  <x-m>-18.011</x-m>
-		  <y-m>-0.289</y-m>
-		  <z-m>0.707</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>  
-  <model>
-	  <name>Rad alt panel</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/rad_alt.ac</path>
-	  <offsets>
-		  <x-m>-18.111</x-m>
-		  <y-m>-0.289</y-m>
-		  <z-m>0.706</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model> 
-  <model>
-	  <name>ILS panel</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/ils_panel.xml</path>
-	  <offsets>
-		  <x-m>-18.201</x-m>
-		  <y-m>-0.289</y-m>
-		  <z-m>0.709</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model> 
-
-  <model>
-	  <name>TO LDG panel</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/to_ldg_panel.xml</path>
-	  <offsets>
-		  <x-m>-17.792</x-m>
-		  <y-m>-0.288</y-m>
-		  <z-m>0.709</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
   </model>
-
-  <model>
-	  <name>eng aux</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/eng_aux_pwr.ac</path>
-	  <offsets>
-		  <x-m>-18.096</x-m>
-		  <y-m>-0.119</y-m>
-		  <z-m>0.713</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-
   <model>
 	  <name>cdu900</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/cdu900.xml</path>
 	  <offsets>
-		  <x-m>-17.960</x-m>
-		  <y-m>-0.137</y-m>
-		  <z-m>0.710</z-m>
+		  <x-m>-17.936</x-m>
+		  <y-m>-0.140</y-m>
+		  <z-m>0.705</z-m>
 		  <pitch-deg>-90</pitch-deg>
 	  </offsets>
   </model>
+
   <model>
-	  <name>tacan sw</name>
+	  <name>ILS panel</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/ILS-Panel.xml</path>
+	  <offsets>
+		  <x-m>-18.162</x-m>
+		  <y-m>-0.290</y-m>
+		  <z-m>0.712</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>tacan-sw</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/ARN-118-tacan.xml</path>
 	  <offsets>
-		  <x-m>-17.908</x-m>
-		  <y-m>-0.290</y-m>
+		  <x-m>-17.900</x-m>
+		  <y-m>-0.292</y-m>
 		  <z-m>0.720</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
+
+  <model>
+	  <name>eng-aux-panel</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/Eng-Aux-Pwr.xml</path>
+	  <offsets>
+		  <x-m>-18.070</x-m>
+		  <y-m>-0.130</y-m>
+		  <z-m>0.710</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>Flt Ctrl Pwr Panel</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/Flt-Ctrl-Pwr.xml</path>
+	  <offsets>
+		  <x-m>-18.071</x-m>
+		  <y-m> -0.120</y-m>
+		  <z-m>  0.711</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>IFF panel</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/IFF-Panel.xml</path>
+	  <offsets>
+		  <x-m>-18.008</x-m>
+		  <y-m>-0.289</y-m>
+		  <z-m>0.710</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>Rad-Alt</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/Rad-Alt.xml</path>
+	  <offsets>
+		  <x-m>-18.110</x-m>
+		  <y-m>-0.289</y-m>
+		  <z-m>0.709</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>TO-LDG</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/TO-LDG.xml</path>
+	  <offsets>
+		  <x-m>-17.795</x-m>
+		  <y-m>-0.288</y-m>
+		  <z-m> 0.709</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
   <model>
 	  <name>throttle</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/throttle.xml</path>
 	  <offsets>
-		  <x-m>-17.730</x-m>
-		  <y-m>0.185</y-m>
-		  <z-m>0.710</z-m>
+		  <x-m>-17.710</x-m>
+		  <y-m> 0.185</y-m>
+		  <z-m> 0.710</z-m>
 		  <pitch-deg>-90</pitch-deg>
 	  </offsets>
   </model>
@@ -625,29 +620,30 @@ more to come :-)
 	  <name>alter throt</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/alter_throt.xml</path>
 	  <offsets>
-		  <x-m>-17.830</x-m>
-		  <y-m>-0.263</y-m>
-		  <z-m>0.710</z-m>
+		  <x-m>-17.800</x-m>
+		  <y-m>-0.250</y-m>
+		  <z-m> 0.706</z-m>
 		  <pitch-deg>-90</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <!-- overhead panel -->
-  
+
   <model>
 	  <name>overhead panel</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/overhead_panel.xml</path>
 	  <offsets>
-		  <x-m>-17.920</x-m>
+		  <x-m>-17.720</x-m>
 		  <y-m>-0.126</y-m>
-		  <z-m>1.780</z-m>
-		  <pitch-deg>75</pitch-deg>
+		  <z-m>1.805</z-m>
+		  <pitch-deg>78</pitch-deg>
 	  </offsets>
   </model>
-  
-  
+
+
   <!-- WSO instruments xxxxxxxxxxxxxxxxxxxxxxxxx -->
-  
+
+
   <model>
 	  <name>DSO nd</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/nd.xml</path>
@@ -664,7 +660,7 @@ more to come :-)
 		  <pitch-deg>-35</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>DSO screen1</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/nd_big.ac</path>
@@ -681,7 +677,7 @@ more to come :-)
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>DSO screen2</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/nd_big.ac</path>
@@ -698,10 +694,10 @@ more to come :-)
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>DSO alt</name>
-	  <path>Aircraft/Instruments-3d/alt-2/alt2-3d.xml</path>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/alt2-3d.xml</path>
 	  <condition>
 		 <equals>
 			 <property>sim/current-view/name</property>
@@ -715,10 +711,10 @@ more to come :-)
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
+
   <model>
 	  <name>DSO ai</name>
-	  <path>Aircraft/Instruments-3d/attitude-indicator.xml</path>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/ai.xml</path>
 	  <condition>
 		 <equals>
 			 <property>sim/current-view/name</property>
@@ -726,37 +722,93 @@ more to come :-)
 		 </equals>
 	 </condition>
 	  <offsets>
-		  <x-m>-15.770</x-m>
+		  <x-m>-15.812</x-m>
 		  <y-m>-0.620</y-m>
 		  <z-m>1.830</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
-<!-- OSO instrumentation -->
+
+<!-- WSO instrumentation -->
+
+
   <model>
-	  <name>OSO mfd</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/wso_mfd.xml</path>
-	  <condition>
-	       <or>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>OSO view</value>
-		 </equals>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>DSO/OSO centered view</value>
-		 </equals>
-	       </or>
-	 </condition>
+	  <name>WSO MFD 1</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/MFD1.xml</path>
 	  <offsets>
-		  <x-m>-15.715</x-m>
-		  <y-m>0.370</y-m>
-		  <z-m>1.385</z-m>
-		  <pitch-deg>-35</pitch-deg>
+		  <x-m>-15.70927</x-m>
+		  <y-m>0.37386</y-m>
+		  <z-m>1.37427</z-m>
+		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
+
+  <model>
+	  <name>WSO MFD 2</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/MFD2.xml</path>
+	  <offsets>
+		  <x-m>-15.79044</x-m>
+		  <y-m>0.57020</y-m>
+		  <z-m>1.63514</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>  
+
+  <model>
+	  <name>KEYBOARD2</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/KEYBOARD.xml</path>
+	  <offsets>
+		  <x-m>-15.70984</x-m>
+		  <y-m>0.57396</y-m>
+		  <z-m>1.37553</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model> 
+
+  <model>
+	  <name>RADARSCREEN</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/RADARSCREEN.xml</path>
+	  <offsets>
+		  <x-m>-15.78627</x-m>
+		  <y-m>0.30979</y-m>
+		  <z-m>1.62833</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model> 
   
+  <model>
+	  <name>KNOBS</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/KNOBS.xml</path>
+	  <offsets>
+		  <x-m>-15.79517</x-m>
+		  <y-m>0.57656</y-m>
+		  <z-m>1.80040</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model> 
+
+  <model>
+	  <name>RADAR_CONTROLS</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/RADAR.xml</path>
+	  <offsets>
+		  <x-m>-15.71449</x-m>
+		  <y-m>0.19913</y-m>
+		  <z-m>1.37257</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model> 
+
+  <model>
+	  <name>SWITCHES+KNOBS1</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/SWITCHES+KNOBS.xml</path>
+	  <offsets>
+		  <x-m>-15.78866</x-m>
+		  <y-m>-0.00275</y-m>
+		  <z-m>1.92311</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
   <model>
 	  <name>OSO sms</name>
 	  <path>Aircraft/B-1B/Models/Instruments-3d/sms.xml</path>
@@ -773,16 +825,41 @@ more to come :-)
 	       </or>
 	 </condition>
 	  <offsets>
-		  <x-m>-15.710</x-m>
-		  <y-m>0.660</y-m>
+		  <x-m>-15.704</x-m>
+		  <y-m>0.675</y-m>
 		  <z-m>1.380</z-m>
 		  <pitch-deg>-35</pitch-deg>
 	  </offsets>
   </model>
-  
+
+
+
   <model>
-	  <name>OSO smsmonitor</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/sms_monitor.xml</path>
+	  <name>OSO alt</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/alt2-3d.xml</path>
+	  <condition>
+	       <or>
+		 <equals>ikb
+			 <property>sim/current-view/name</property>
+			 <value>OSO view</value>
+		 </equals>
+		 <equals>
+			 <property>sim/current-view/name</property>
+			 <value>DSO/OSO centered view</value>
+		 </equals>
+	       </or>
+	 </condition>
+	  <offsets>
+		  <x-m>-15.770</x-m>
+		  <y-m>0.450</y-m>
+		  <z-m>1.810</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>OSO ai</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/ai.xml</path>target
 	  <condition>
 	       <or>
 		 <equals>
@@ -796,33 +873,100 @@ more to come :-)
 	       </or>
 	 </condition>
 	  <offsets>
-		  <x-m>-15.793</x-m>
-		  <y-m>0.615</y-m>
-		  <z-m>1.640</z-m>
+		  <x-m>-15.812</x-m>
+		  <y-m>0.550</y-m>
+		  <z-m>1.810</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+                     <!--- DSO Instruments -->
+
+  <model>
+	  <name>OSO MFD 1</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/MFD1.xml</path>
+	  <offsets>
+		  <x-m>-15.72298</x-m>
+		  <y-m>-0.85446</y-m>
+		  <z-m>1.39918</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>OSO MFD 2</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/MFD2.xml</path>
+	  <offsets>
+		  <x-m>-15.79340</x-m>
+		  <y-m>-0.82605</y-m>
+		  <z-m>1.63548</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model> 
+
+  <model>
+	  <name>OSO MFD 3</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/MFD2.xml</path>
+	  <offsets>
+		  <x-m>-15.79340</x-m>
+		  <y-m>-0.53847</y-m>
+		  <z-m>1.63548</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model> 
+
+  <model>
+	  <name>OSO MFD 4</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/MFD2.xml</path>
+	  <offsets>
+		  <x-m>-15.79340</x-m>
+		  <y-m>-0.25180</y-m>
+		  <z-m>1.54030</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model> 
+
+  <model>
+	  <name>KEYBOARD1</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/KEYBOARD.xml</path>
+	  <offsets>
+		  <x-m>-15.72563</x-m>
+		  <y-m>-0.65535</y-m>
+		  <z-m>1.39915</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model> 
+
+  <model>
+	  <name>AFS_ECU</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/AFS_ECU.xml</path>
+	  <offsets>
+		  <x-m>-15.73374</x-m>
+		  <y-m>-0.48777</y-m>
+		  <z-m>1.40843</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
   
   <model>
-	  <name>OSO ikb</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/ikb.xml</path>
-	  <condition>
-	       <or>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>OSO view</value>
-		 </equals>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>DSO/OSO centered view</value>
-		 </equals>
-	       </or>
-	 </condition>
+	  <name>SMALL COMPUTER</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/SMALL_COMPUTER.xml</path>
 	  <offsets>
-		  <x-m>-15.710</x-m>
-		  <y-m>0.492</y-m>
-		  <z-m>1.380</z-m>
-		  <pitch-deg>-35</pitch-deg>
+		  <x-m>-15.78755</x-m>
+		  <y-m>-0.32700</y-m>
+		  <z-m>1.76459</z-m>
+		  <pitch-deg>0</pitch-deg>
+	  </offsets>
+  </model>
+
+  <model>
+	  <name>NAVAUX</name>
+	  <path>Aircraft/B-1B/Models/Instruments-3d/NAVAUX.xml</path>
+	  <offsets>
+		  <x-m>-15.78810</x-m>
+		  <y-m>-0.02018</y-m>
+		  <z-m>1.77977</z-m>
+		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
   
@@ -842,80 +986,13 @@ more to come :-)
 	       </or>
 	 </condition>
 	  <offsets>
-		  <x-m>-15.794</x-m>
-		  <y-m>0.283</y-m>
-		  <z-m>1.635</z-m>
+		  <x-m>-15.754</x-m>
+		  <y-m>0.11857</y-m>
+		  <z-m>1.52343</z-m>
 		  <pitch-deg>0</pitch-deg>
 	  </offsets>
   </model>
-  
-  <model>
-	  <name>OSO targetmonitor</name>
-	  <path>Aircraft/B-1B/Models/Instruments-3d/target_monitor.xml</path>
-	  <condition>
-	       <or>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>OSO view</value>
-		 </equals>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>DSO/OSO centered view</value>
-		 </equals>
-	       </or>
-	 </condition>
-	  <offsets>
-		  <x-m>-15.793</x-m>
-		  <y-m>0.380</y-m>
-		  <z-m>1.640</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>OSO alt</name>
-	  <path>Aircraft/Instruments-3d/alt-2/alt2-3d.xml</path>
-	  <condition>
-	       <or>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>OSO view</value>
-		 </equals>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>DSO/OSO centered view</value>
-		 </equals>
-	       </or>
-	 </condition>
-	  <offsets>
-		  <x-m>-15.770</x-m>
-		  <y-m>0.470</y-m>
-		  <z-m>1.830</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
-  
-  <model>
-	  <name>OSO ai</name>
-	  <path>Aircraft/Instruments-3d/attitude-indicator.xml</path>
-	  <condition>
-	       <or>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>OSO view</value>
-		 </equals>
-		 <equals>
-			 <property>sim/current-view/name</property>
-			 <value>DSO/OSO centered view</value>
-		 </equals>
-	       </or>
-	 </condition>
-	  <offsets>
-		  <x-m>-15.770</x-m>
-		  <y-m>0.370</y-m>
-		  <z-m>1.830</z-m>
-		  <pitch-deg>0</pitch-deg>
-	  </offsets>
-  </model>
+
+
 
 </PropertyList>

@@ -9,16 +9,16 @@ maggse
 <!-- afterburner switches -->
 <animation>
 	<type>rotate</type>
-	<object-name>alter_throt</object-name>
+	<object-name>eng_0</object-name>
 	<property>controls/switches/engines/afterburner[0]</property>
 	<interpolation>
 		<entry>
 			<ind>0.0</ind>
-			<dep>35.0</dep>
+			<dep>30.0</dep>
 		</entry>
 		<entry>
 			<ind>1.0</ind>
-			<dep>-35.0</dep>
+			<dep>-30.0</dep>
 		</entry>
 	</interpolation>
 	<axis>
@@ -27,15 +27,15 @@ maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>0.165</y-m>
-		<z-m>0.064</z-m>
+		<x-m>0.01273</x-m>
+		<y-m>0.2201</y-m>
+		<z-m>0.06411    </z-m>
 	</center>
 </animation>
 
 <animation>
 	<type>pick</type>
-	<object-name>alter_throt</object-name>
+	<object-name>eng_0</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>true</repeatable>
@@ -49,16 +49,16 @@ maggse
 
 <animation>
 	<type>rotate</type>
-	<object-name>alter_throt.001</object-name>
+	<object-name>eng_1</object-name>
 	<property>controls/switches/engines/afterburner[1]</property>
 	<interpolation>
 		<entry>
 			<ind>0.0</ind>
-			<dep>35.0</dep>
+			<dep>30.0</dep>
 		</entry>
 		<entry>
 			<ind>1.0</ind>
-			<dep>-35.0</dep>
+			<dep>-30.0</dep>
 		</entry>
 	</interpolation>
 	<axis>
@@ -67,15 +67,15 @@ maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>0.165</y-m>
-		<z-m>0.064</z-m>
+		<x-m>0.01273</x-m>
+		<y-m>0.25530</y-m>
+		<z-m>0.06418</z-m>
 	</center>
 </animation>
 
 <animation>
 	<type>pick</type>
-	<object-name>alter_throt.001</object-name>
+	<object-name>eng_1</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>true</repeatable>
@@ -89,16 +89,16 @@ maggse
 
 <animation>
 	<type>rotate</type>
-	<object-name>alter_throt.002</object-name>
+	<object-name>eng_2</object-name>
 	<property>controls/switches/engines/afterburner[2]</property>
 	<interpolation>
 		<entry>
 			<ind>0.0</ind>
-			<dep>35.0</dep>
+			<dep>30.0</dep>
 		</entry>
 		<entry>
 			<ind>1.0</ind>
-			<dep>-35.0</dep>
+			<dep>-30.0</dep>
 		</entry>
 	</interpolation>
 	<axis>
@@ -107,15 +107,15 @@ maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>0.165</y-m>
-		<z-m>0.064</z-m>
+		<x-m>0.01273</x-m>
+		<y-m>0.29520</y-m>
+		<z-m>0.06418</z-m>
 	</center>
 </animation>
 
 <animation>
 	<type>pick</type>
-	<object-name>alter_throt.002</object-name>
+	<object-name>eng_2</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>true</repeatable>
@@ -129,16 +129,16 @@ maggse
 
 <animation>
 	<type>rotate</type>
-	<object-name>alter_throt.003</object-name>
+	<object-name>eng_3</object-name>
 	<property>controls/switches/engines/afterburner[3]</property>
 	<interpolation>
 		<entry>
 			<ind>0.0</ind>
-			<dep>35.0</dep>
+			<dep>30.0</dep>
 		</entry>
 		<entry>
 			<ind>1.0</ind>
-			<dep>-35.0</dep>
+			<dep>-30.0</dep>
 		</entry>
 	</interpolation>
 	<axis>
@@ -147,15 +147,15 @@ maggse
 		<z>0.0</z>
 	</axis>
 	<center>
-		<x-m>0.005</x-m>
-		<y-m>0.165</y-m>
-		<z-m>0.064</z-m>
+		<x-m>0.01273</x-m>
+		<y-m>0.33050</y-m>
+		<z-m>0.06418</z-m>
 	</center>
 </animation>
 
 <animation>
 	<type>pick</type>
-	<object-name>alter_throt.003</object-name>
+	<object-name>eng_3</object-name>
 	<action>
 		<button>0</button>
 		<repeatable>true</repeatable>
@@ -166,29 +166,23 @@ maggse
 		</binding>
 	</action>
 </animation>
- 
- <animation>
-	<type>material</type>
-	<object-name>alter_throt</object-name>
-	<object-name>alter_throt.001</object-name>
-        <object-name>alter_throt.002</object-name>
-	<object-name>alter_throt.003</object-name>
-	<emission>
-		<red>0.6</red>
-		<green>0.3</green>
-		<blue>0.2</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
-	</emission>
-</animation>
 
  <animation>
 	<type>material</type>
-	<object-name>fltdir.002</object-name>
-
+	<object-name>eng_0</object-name>
+	<object-name>eng_1</object-name>
+    <object-name>eng_2</object-name>
+	<object-name>eng_3</object-name>
+    <object-name>ptch_gain</object-name>
+    <object-name>roll_limit</object-name>
+	<object-name>stall_inhib</object-name>
+	<object-name>stby_ptch</object-name>
+    <object-name>trim</object-name>
+	<object-name>TTO</object-name>
 	<emission>
-		<red>0.4</red>
-		<green>0.2</green>
-		<blue>0.15</blue>
+		<red>0.9</red>
+		<green>0.5</green>
+		<blue>0.9</blue>
 		<factor-prop>controls/lighting/instruments-norm</factor-prop>
 	</emission>
 </animation>
