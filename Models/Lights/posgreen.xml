@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <PropertyList> 
 
-THIS IS A TEST OF FUNCTIONALITY (CHECK SCALE FACTOR)
-
 <model>
  <name>GreenLight</name>
  <path>Aircraft/generic/spotlight.xml</path> 
@@ -38,9 +36,9 @@ THIS IS A TEST OF FUNCTIONALITY (CHECK SCALE FACTOR)
  <animation>
   <type>scale</type>
   <name>GreenLight</name> 
-  <x-offset>3</x-offset>
-  <y-offset>3</y-offset>
-  <z-offset>3</z-offset>
+  <x-offset>1.5</x-offset>
+  <y-offset>1.5</y-offset>
+  <z-offset>1.5</z-offset>
   <center>
  <x-m>14.759</x-m>
  <y-m>11.433</y-m>
