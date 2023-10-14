@@ -156,6 +156,83 @@ sweat by maggse
 	 <path>Aircraft/B-1B/Models/Lights/landing_cone.xml</path>
 <!--/model--> 
 
+<!--Wing strobes-->
+
+<model>
+	 <name>wingstrobeL</name>
+	 <path>Aircraft/B-1B/Models/Lights/strobe-wings.xml</path>
+	 <offsets>
+                 <x-m>14.759</x-m>
+                 <y-m>-11.433</y-m>
+                 <z-m>-0.969</z-m>
+		 <pitch-deg>0</pitch-deg>
+	 </offsets>
+ </model> 
+
+ <animation>
+	  <type>rotate</type>
+          <object-name>wingstrobeL</object-name>
+	  <property>rotors/main/blade[0]/position-deg</property>
+	  <interpolation>
+		  <entry>
+			  <ind>0.0</ind>
+			  <dep>0.0</dep>
+		  </entry>
+		  <entry>
+			  <ind>1.0</ind>
+			  <dep>52.0</dep>
+		  </entry>
+	  </interpolation>
+	  <center>
+		  <x-m>-1.1</x-m>
+		  <y-m>-4</y-m>
+		  <z-m>0.00</z-m>
+	  </center>
+	  <axis>
+		  <x>0</x>
+		  <y>0</y>
+		  <z>-1</z>
+	  </axis>
+ </animation>
+
+
+<model>
+	 <name>wingstrobeR</name>
+	 <path>Aircraft/B-1B/Models/Lights/strobe-wings.xml</path>
+	 <offsets>
+          <x-m>14.759</x-m>
+          <y-m>11.433</y-m>
+          <z-m>-0.969</z-m>
+          <pitch-deg>0</pitch-deg>
+	 </offsets>
+ </model>
+
+  <animation>
+	  <type>rotate</type>
+          <object-name>wingstrobeR</object-name>
+	  <property>rotors/main/blade[0]/position-deg</property>
+	  <interpolation>
+		  <entry>
+			  <ind>0.0</ind>
+			  <dep>0.0</dep>
+		  </entry>
+		  <entry>
+			  <ind>1.0</ind>
+			  <dep>52.0</dep>
+		  </entry>
+	  </interpolation>
+	  <center>
+		  <x-m>-1.1</x-m>
+		  <y-m>4</y-m>
+		  <z-m>0.00</z-m>
+	  </center>
+	  <axis>
+		  <x>0</x>
+		  <y>0</y>
+		  <z>1</z>
+	  </axis>
+ </animation>
+
 
   <animation>
 	 <type>spin</type>
@@ -186,6 +263,18 @@ sweat by maggse
 		 <z>0</z>
 	 </axis>
  </animation>
+
+<!--<model>
+	 <name>strobe1</name>
+	 <path>Aircraft/B-1B/Models/Lights/strobe.xml</path>
+	 <offsets>
+		 <x-m>-3.500</x-m>
+		 <y-m>4.9</y-m>
+		 <z-m>-1.0</z-m>
+		 <pitch-deg>90</pitch-deg>
+	 </offsets>
+ </model>-->
+
  <model>
 	 <name>strobe2</name>
 	 <path>Aircraft/B-1B/Models/Lights/strobe.xml</path>
@@ -322,16 +411,7 @@ sweat by maggse
  
 	 
  
- <!--<model>
-	 <name>strobe1</name>
-	 <path>Aircraft/B-1B/Models/Lights/strobe.xml</path>
-	 <offsets>
-		 <x-m>-3.500</x-m>
-		 <y-m>4.9</y-m>
-		 <z-m>-1.0</z-m>
-		 <pitch-deg>90</pitch-deg>
-	 </offsets>
- </model>-->
+ 
 
   <!-- engine fire -->
   
@@ -1017,6 +1097,58 @@ sweat by maggse
     </or>
   </condition>
 </animation>
+
+  <animation>
+	  <type>rotate</type>
+          <object-name>posright</object-name>
+	  <property>rotors/main/blade[0]/position-deg</property>
+	  <interpolation>
+		  <entry>
+			  <ind>0.0</ind>
+			  <dep>0.0</dep>
+		  </entry>
+		  <entry>
+			  <ind>1.0</ind>
+			  <dep>52.0</dep>
+		  </entry>
+	  </interpolation>
+	  <center>
+		  <x-m>-1.1</x-m>
+		  <y-m>4</y-m>
+		  <z-m>0.00</z-m>
+	  </center>
+	  <axis>
+		  <x>0</x>
+		  <y>0</y>
+		  <z>1</z>
+	  </axis>
+ </animation>
+
+  <animation>
+	  <type>rotate</type>
+          <object-name>posleft</object-name>
+	  <property>rotors/main/blade[0]/position-deg</property>
+	  <interpolation>
+		  <entry>
+			  <ind>0.0</ind>
+			  <dep>0.0</dep>
+		  </entry>
+		  <entry>
+			  <ind>1.0</ind>
+			  <dep>52.0</dep>
+		  </entry>
+	  </interpolation>
+	  <center>
+		  <x-m>-1.1</x-m>
+		  <y-m>-4</y-m>
+		  <z-m>0.00</z-m>
+	  </center>
+	  <axis>
+		  <x>0</x>
+		  <y>0</y>
+		  <z>-1</z>
+	  </axis>
+ </animation>
 	
 
 </PropertyList>

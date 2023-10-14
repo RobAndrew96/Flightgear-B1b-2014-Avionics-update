@@ -2,20 +2,20 @@
 <PropertyList> 
 
 <model>
- <name>GreenLightbrt</name>
+ <name>GreenLight</name>
  <path>Aircraft/generic/spotlight.xml</path> 
- <property>controls/lighting/nav-lights-brt</property>
+ <property>controls/lighting/nav-lights</property>
  <offsets>
- <x-m>-3</x-m>
- <y-m>4.50</y-m>
- <z-m>-0.80</z-m>
+ <x-m>14.759</x-m>
+ <y-m>11.433</y-m>
+ <z-m>-0.969</z-m>
  </offsets>
  <overlay>
   <params>
-   <name>GreenLighton</name>
-   <power-source>controls/lighting/nav-lights-brt</power-source>
+   <name>GreenLight</name>
+   <power-source>controls/lighting/nav-lights</power-source>
    <direction>
-    <x>0.5</x>
+    <x>0.1</x>
     <y>-0.5</y>
     <z>0.0</z>
    </direction>
@@ -31,21 +31,19 @@
    </specular> 
   </params>
  </overlay>
- <animation>
-  <name>GreenLightbrt</name> 
-  <type>scale</type>
-  <x-offset>3</x-offset>
-  <y-offset>3</y-offset>
-  <z-offset>3</z-offset>
-  <center>
- <x-m>-3</x-m>
- <y-m>4.50</y-m>
- <z-m>-0.80</z-m>
-  </center>
- </animation>
 </model> 
 
-
-
+ <animation>
+  <type>scale</type>
+  <name>GreenLight</name> 
+  <x-offset>1.5</x-offset>
+  <y-offset>1.5</y-offset>
+  <z-offset>1.5</z-offset>
+  <center>
+ <x-m>14.759</x-m>
+ <y-m>11.433</y-m>
+ <z-m>-0.969</z-m>
+  </center>
+ </animation> 
 
 </PropertyList>

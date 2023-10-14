@@ -114,9 +114,9 @@ maggse
 		 <z>0.0</z>
 	 </axis>
 	 <center>
-		 <x-m> 0.01898</x-m>
-		 <y-m> 0.039558</y-m>
-		 <z-m> 0.21472</z-m>
+		 <x-m> 0.00891</x-m>
+		 <y-m> 0.03956</y-m>
+		 <z-m> 0.20617</z-m>
    </center>
  </animation>
 
@@ -572,134 +572,128 @@ maggse
 
 
 <!-- nav lights-->
-
  <animation>
 	 <type>rotate</type>
 	 <object-name>nav_lights</object-name>
-         <factor>20</factor>
-    <center>
-      <x-m>0.01</x-m>
-      <y-m>-0.1826</y-m>
-      <z-m>0.2025</z-m>
-    </center>
-    <axis>
-      <x>0.0</x>
-      <y>-1.0</y>
-      <z>0.0</z>
-    </axis>
+	 <property>controls/lighting/nav-lights</property>
+	 <interpolation>
+		 <entry>
+			 <ind> 0.0</ind>
+			 <dep>0.0</dep>
+		 </entry>
+		 <entry>
+			 <ind> 1.0</ind>
+			 <dep> 30.0</dep>
+		 </entry>
+	 </interpolation>
+	 <axis>
+		 <x>0.0</x>
+		 <y>-1.0</y>
+		 <z>0.0</z>
+	 </axis>
+	 <center>
+		 <x-m> 0.0104</x-m>
+		 <y-m>-0.1826</y-m>
+		 <z-m> 0.2017</z-m>
+   </center>
  </animation>
- <animation> 
-	 <type>pick</type> 
+
+ <animation>
+	 <type>pick</type>
 	 <object-name>nav_lights</object-name>
 	 <action>
 		 <button>0</button>
-		 <repeatable>false</repeatable>
+		 <repeatable>true</repeatable>
 		 <interval-sec>0.5</interval-sec>
 		 <binding>
 			 <command>property-toggle</command>
-			 <property>controls/lighting/nav-lights-on</property> 
+			 <property>controls/lighting/nav-lights</property>
 		 </binding>
-	 </action>
-</animation>
- <animation> 
-	 <type>pick</type> 
-	 <object-name>nav_lights</object-name>
-	 <action>
-		 <button>0</button>
-		 <repeatable>false</repeatable>
-		 <interval-sec>0.5</interval-sec>
-		 <binding>
-			 <command>property-toggle</command>
-			 <property>controls/lighting/nav-lights-brt</property>
- 		 </binding> 
 	 </action>
 </animation>
 
 <!-- anti collision lights-->
 
-
-                   <!--STROBES-->
- <animation>
-	 <type>rotate</type>
-	 <object-name>anti_coll_lights</object-name>
-	 <property>controls/lighting/strobe</property>
-	 <interpolation>
-		 <entry>
-			 <ind>1.0</ind>
-			 <dep>0.0</dep>
-		 </entry>
-		 <entry>
-			 <ind>0.0</ind>
-			 <dep>30.0</dep>
-		 </entry>
-	 </interpolation>
-	 <axis>
-		 <x> 0.0</x>
-		 <y>-1.0</y>
-		 <z> 0.0</z>
-	 </axis>
-	 <center>
+<animation>
+	<type>rotate</type>
+	<object-name>anti_coll_lights</object-name>
+	<property>controls/lighting/strobe</property>
+	<interpolation>
+		<entry>
+			<ind>0.0</ind>
+			<dep>-20.0</dep>
+		</entry>
+		<entry>
+			<ind>1.0</ind>
+			<dep>20.0</dep>
+		</entry>
+	</interpolation>
+	<axis>
+		<x>0.0</x>
+		<y>1.0</y>
+		<z>0.0</z>
+	</axis>
+	<center>
 		<x-m> 0.01053</x-m>
 		<y-m>-0.22040</y-m>
 		<z-m> 0.20820</z-m>
-   </center>
- </animation>
- <animation>
-	 <type>pick</type>
-	 <object-name>anti_coll_lights</object-name>
-	 <action>
-		 <button>0</button>
-		 <repeatable>true</repeatable>
-		 <interval-sec>0.5</interval-sec>
-		 <binding>
-			 <command>property-toggle</command>
-			 <property>controls/lighting/strobe</property>
-		 </binding>
-	 </action>
-</animation> 
+	</center>
+</animation>
 
-<!-- slipway light--> 
+<animation>
+	<type>pick</type>
+	<object-name>anti_coll_lights</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<interval-sec>0.5</interval-sec>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/lighting/strobe</property>
+		</binding>
+	</action>
+</animation>
+                   <!--STROBES--> 
 
- <animation>
-	 <type>rotate</type>
-	 <object-name>Slipway-light-knob</object-name>
-	 <property>controls/lighting/slipway-light</property>
-	 <interpolation>
-		 <entry>
-			 <ind>1.0</ind>
-			 <dep>0.0</dep>
-		 </entry>
-		 <entry>
-			 <ind>0.0</ind>
-			 <dep>-90.0</dep>
-		 </entry>
-	 </interpolation>
-	 <axis>
-		 <x>1.0</x>
-		 <y>0.0</y>
-		 <z>0.0</z>
-	 </axis>
-	 <center>
-		<x-m>0.01969</x-m>
-		<y-m>-0.049236</y-m>
-		<z-m>0.21611</z-m>
-   </center>
- </animation>
- <animation>
-	 <type>pick</type>
-	 <object-name>Slipway-light-knob</object-name>
-	 <action>
-		 <button>0</button>
-		 <repeatable>true</repeatable>
-		 <interval-sec>0.5</interval-sec>
-		 <binding>
-			 <command>property-toggle</command>
-			 <property>controls/lighting/slipway-light</property>
-		 </binding>
-	 </action>
-</animation> 
+<animation>
+	<type>rotate</type>
+	<object-name>flash</object-name>
+	<property>controls/lighting/wing-strobe</property>
+	<interpolation>
+		<entry>
+			<ind>0.0</ind>
+			<dep>20.0</dep>
+		</entry>
+		<entry>
+			<ind>1.0</ind>
+			<dep>-20.0</dep>
+		</entry>
+	</interpolation>
+	<axis>
+		<x>0.0</x>
+		<y>1.0</y>
+		<z>0.0</z>
+	</axis>
+	<center>
+		<x-m> 0.011</x-m>
+		<y-m>-0.1206</y-m>
+		<z-m> 0.199</z-m>
+	</center>
+</animation>
 
-
+<animation>
+	<type>pick</type>
+	<object-name>flash</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<interval-sec>0.5</interval-sec>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/lighting/wing-strobe</property>
+		</binding>
+	</action>
+</animation>
 
 <!-- instrument lights-->
 
@@ -851,7 +845,6 @@ maggse
     <object-name>hyd_test_2</object-name>
     <object-name>gen_reset_1</object-name>
     <object-name>gen_reset_2</object-name>
-    <object-name>Slipway-light-knob</object-name>
 	 <emission>
 		 <red>0.9</red>
 		 <green>0.5</green>
